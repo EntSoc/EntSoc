@@ -1,0 +1,50 @@
+.loading-icon {
+  animation: loading-icon-spin infinite 1s linear;
+  color: white; }
+
+@keyframes loading-icon-spin {
+  from {
+    transform: rotate(360deg); }
+  to {
+    transform: rotate(0deg); } }
+
+.email-signup form {
+  display: flex;
+  align-items: center;
+  max-width: 650px;
+  width: 95vw; }
+  .email-signup form button {
+    flex-shrink: 0; }
+
+.email-signup .email-field {
+  background-color: #E5E5E5;
+  margin: 15px;
+  padding: 5px 0 5px 15px;
+  border-radius: 8px;
+  border: none;
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  height: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px; }
+  @media only screen and (max-width: 768px) {
+    .email-signup .email-field {
+      font-size: 10px; } }
+  .email-signup .email-field:focus {
+    outline: none; }
+
+.section-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; }
+  .section-title-container h1 {
+    font-size: 1.3125rem;
+    text-transform: uppercase; }
+  .section-title-container .horizontal-bar {
+    width: 4em;
+    height: .125em;
+    background-color: black;
+    margin-right: 16px; }
+
