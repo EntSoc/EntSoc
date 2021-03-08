@@ -157,6 +157,98 @@ span.roles {
   to {
     transform: rotate(0deg); } }
 
+.section-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px; }
+  .section-title-container h1 {
+    font-size: 1.3125rem;
+    text-transform: uppercase; }
+  .section-title-container .horizontal-bar {
+    width: 4em;
+    height: .125em;
+    background-color: black;
+    margin-right: 16px; }
+
+.list-of-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.member {
+  padding: 20px; }
+
+.member-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (max-width: 768px) {
+    .member-img {
+      width: 200px;
+      height: 200px; } }
+
+.member-name {
+  padding-top: 5px; }
+
+#groupPhoto {
+  width: 100%;
+  grid-area: group-photo; }
+
+.team-page {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 0 auto 0;
+  grid-template-areas: "group-photo group-photo group-photo" ". team-description ." ". team-images .";
+  grid-row-gap: 100px; }
+  @media only screen and (min-width: 969px) {
+    .team-page {
+      margin-top: 72px; } }
+  @media only screen and (max-width: 768px) {
+    .team-page {
+      grid-row-gap: 30px; } }
+  @media only screen and (min-width: 992px) {
+    .team-page {
+      grid-template-columns: 15% auto 15%; } }
+
+.intro-text-container {
+  grid-area: team-description; }
+  .intro-text-container a {
+    text-decoration: none;
+    color: #B31E36; }
+
+.main-title {
+  padding-top: 3em;
+  text-align: center;
+  width: 100%; }
+
+.body-text-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  padding-top: 1em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto; }
+
+.meet-the-team-container {
+  grid-area: team-images; }
+
+.team-tabs-container {
+  display: flex;
+  flex-grow: 1; }
+
+.team-sections-container {
+  flex-basis: 80vw;
+  padding-top: 50px;
+  overflow-y: auto;
+  height: 80vh; }
+  .team-sections-container .list-of-members {
+    margin-bottom: 100px; }
+    .team-sections-container .list-of-members:last-child {
+      margin-bottom: 0; }
+
 .email-signup form {
   display: flex;
   align-items: center;
@@ -274,19 +366,6 @@ span.roles {
   width: .5em;
   height: .5em;
   margin-left: .1em; }
-
-.section-title-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px; }
-  .section-title-container h1 {
-    font-size: 1.3125rem;
-    text-transform: uppercase; }
-  .section-title-container .horizontal-bar {
-    width: 4em;
-    height: .125em;
-    background-color: black;
-    margin-right: 16px; }
 
 .gallery-panel {
   grid-area: gallery-panel; }
