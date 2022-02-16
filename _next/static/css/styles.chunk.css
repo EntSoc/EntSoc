@@ -167,16 +167,32 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 14px; }
 
-.contact-container {
-  align-items: center;
-  height: 30px;
-  width: 120px;
-  padding: 7px 21.7px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: white; }
+.contact-info {
+  width: 100%; }
+  .contact-info .subheader {
+    letter-spacing: 0;
+    margin-top: 3px;
+    margin-bottom: 12px;
+    mix-blend-mode: normal;
+    opacity: 0.65; }
+  .contact-info .contact-container {
+    align-items: center;
+    height: 30px;
+    width: 120px;
+    padding: 7px 21.7px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white; }
+  .contact-info .contact-input-container {
+    min-height: 57px; }
+  .contact-info .input-text {
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 240px;
+    background-color: white; }
 
 .contact {
   height: 15px;
@@ -186,57 +202,11 @@ body {
   mix-blend-mode: normal;
   text-align: center; }
 
-.contact-input {
-  width: 210px;
-  height: 30px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 380px; }
-
-.input-text {
-  position: relative;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width: 240px;
-  background-color: white; }
-
 .header {
   letter-spacing: 0;
   padding-top: 20px;
   min-height: 22px;
   mix-blend-mode: normal; }
-
-.flex-row {
-  align-items: flex-start;
-  display: flex;
-  height: 30px;
-  min-width: 380px;
-  position: relative;
-  padding: 20px 0;
-  margin-bottom: 20px; }
-
-.flex-row-1 {
-  align-items: flex-start;
-  display: flex;
-  height: 30px;
-  margin-top: 13px;
-  min-width: 380px;
-  position: relative; }
-
-.container {
-  margin-top: 24px; }
-
-.subheader {
-  letter-spacing: 0;
-  margin-top: 7px;
-  mix-blend-mode: normal;
-  opacity: 0.65;
-  width: 705px; }
 
 * {
   box-sizing: border-box; }
@@ -248,7 +218,9 @@ body {
 
 .long-response {
   align-items: flex-start;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px; }
   .long-response .header {
     padding-bottom: 10px; }
   .long-response .subheader {
