@@ -293,3 +293,22 @@ span.roles {
           .footer-panel .icon-ul .icon-item a p:hover {
             color: #EBD3D5; }
 
+.rectangle {
+  display: flex;
+  flex-flow: row;
+  height: 14px;
+  width: 100%; }
+
+.rectangle-part {
+  height: 14px;
+  flex-grow: 1; }
+
+.red {
+  background-color: #e34d59; }
+
+.yellow {
+  background-color: #ffba52; }
+
+.blue {
+  background-color: #a4e1ea; }
+
